@@ -6,17 +6,20 @@ A small library for making accessing of Open Graph Protocol data easier.
 
 ## Installation via Composer
 To install this fork using Composer setup composer.json as follows:
-	{
-		"repositories": [
-			{
-				"type": "vcs",
-				"url": "https://github.com/aronduby/opengraph"
-			}
-		],
-		"require": {
-			"f1ames/opengraph": "dev-master"
+
+```JSON
+{
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/aronduby/opengraph"
 		}
+	],
+	"require": {
+		"f1ames/opengraph": "dev-master"
 	}
+}
+```
 
 it will install under the f1ames folder but will include these changes
 
