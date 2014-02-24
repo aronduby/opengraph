@@ -18,7 +18,7 @@
    
 */
 
-class OpenGraph implements Iterator
+class OpenGraph implements Iterator, JsonSerializable
 {
   /**
    * There are base schema's based on type, this is just
@@ -40,7 +40,7 @@ class OpenGraph implements Iterator
    * Holds all the Open Graph values we've parsed from a page
    *
    */
-	private $_values = array();
+	protected $_values = array();
 
   /**
    * Fetches a URI and parses it for Open Graph data, returns
@@ -200,6 +200,15 @@ class OpenGraph implements Iterator
 		}
 		return $valid_address;
 	}
+
+  /**
+   * JsonSerialize
+   *
+   *  @return a copy of the _values array
+   */
+  public function jsonSerialize(){
+    return $this->_values;
+  }
 
   /**
    * Iterator code
