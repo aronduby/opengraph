@@ -8,11 +8,11 @@ A small library for making accessing of Open Graph Protocol data easier.
 To install this fork using Composer setup composer.json as follows:
 	{
 		"repositories": [
-	        {
-	            "type": "vcs",
-	            "url": "https://github.com/aronduby/opengraph"
-	        }
-	    ],
+			{
+				"type": "vcs",
+				"url": "https://github.com/aronduby/opengraph"
+			}
+		],
 		"require": {
 			"f1ames/opengraph": "dev-master"
 		}
