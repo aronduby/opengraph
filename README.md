@@ -22,6 +22,6 @@ in PHP
 		echo "$key => $value";
 	}
 
-## Changes from `[flames/opengraph](https://packagist.org/packages/f1ames/opengraph)`
+## Changes from [flames/opengraph](https://packagist.org/packages/f1ames/opengraph)
 * changed the visibility of the `_values` to `protected` for extending purposes
 * implemented `JsonSerializable` which will return a copy of the _values array
